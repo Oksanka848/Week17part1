@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: baseline;
+  margin: 10%;
+  width: 40%;
+}
+input,
+button {
+  margin: 10%;
+  height: 50px;
+}
+
+button {
+  height: 200%;
+  height: 50px;
+}
