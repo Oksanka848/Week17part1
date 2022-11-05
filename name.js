@@ -15,10 +15,13 @@
         function changeName () {
             
             let fio = document.getElementById('fio').value;
-            let str=fio.toLowerCase();     
+            let str=fio.toLowerCase(); 
+             
                 let arr= str.split(" ");
                 
         console.log(arr);
+
+        myname.substring(0,1).toUpperCase() + myname.substring(1).toLowerCase();
         if (arr) {
             lastname.value=arr[0];    
             myname.value=arr[1];
