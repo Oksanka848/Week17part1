@@ -18,6 +18,7 @@
             let str=fio.toLowerCase(); 
             let str2=str.replaceAll("\\s+", " "); 
                 let arr= str2.split(" ");
+                /*if( i=value.""){delete arr[i];}*/
                 
         console.log(arr);
 
