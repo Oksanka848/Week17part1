@@ -13,8 +13,9 @@
         function changeName () {
             
             let fio = document.getElementById('fio').value;
-                     
-                let arr= fio.split(" ");
+            let str=fio.toLowerCase();     
+                let arr= str.split(" ");
+                
         console.log(arr);
         if (arr) {
         document.getElementById('lastname').value=arr[0];    
