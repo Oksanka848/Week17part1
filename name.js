@@ -16,8 +16,8 @@
             
             let fio = document.getElementById('fio').value;
             let str=fio.toLowerCase(); 
-             
-                let arr= str.split(" ");
+            let str2=str.replaceAll("\\s+", " "); 
+                let arr= str2.split(" ");
                 
         console.log(arr);
 
