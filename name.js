@@ -7,7 +7,9 @@
         Имя: *Алиса*, Фамилия: *Цветкова*, Отчество: *Александровна**/
         let button = document.getElementById('button');
         button.onclick=changeName;    
-        
+        let lastname =document.getElementById('lastname');
+        let myname =document.getElementById('name');
+        let midname =document.getElementById('midname');
         let fio = document.getElementById('fio');
         
         function changeName () {
@@ -18,8 +20,8 @@
                 
         console.log(arr);
         if (arr) {
-        document.getElementById('lastname').value=arr[0];    
-        document.getElementById('name').value=arr[1];
-        document.getElementById('midname').value=arr[2];
+            lastname.value=arr[0];    
+            myname.value=arr[1];
+            midname.value=arr[2];
         }
     }
