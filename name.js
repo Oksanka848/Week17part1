@@ -11,7 +11,7 @@
         let myname =document.getElementById('name');
         let midname =document.getElementById('midname');
         let fio = document.getElementById('fio');
-        
+        let sep = document.querySelector('input [name="sep"]');
         function changeName () {
             
             let fio = document.getElementById('fio').value;
@@ -21,10 +21,9 @@
                 
         console.log(arr);
 
-        myname.substring(0,1).toUpperCase() + myname.substring(1).toLowerCase();
         if (arr) {
-            lastname.value=arr[0];    
-            myname.value=arr[1];
-            midname.value=arr[2];
+            lastname.value=arr[0].substring(0,1).toUpperCase() + arr[0].substring(1).toLowerCase();    
+            myname.value=arr[1].substring(0,1).toUpperCase() + arr[1].substring(1).toLowerCase();
+            midname.value=arr[2].substring(0,1).toUpperCase() + arr[2].substring(1).toLowerCase();
         }
     }
