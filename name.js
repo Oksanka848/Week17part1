@@ -16,11 +16,9 @@
             
             let fio = document.getElementById('fio').value;
             let str=fio.toLowerCase(); 
-            let str2=str.replaceAll("\\s+", " "); 
-                let arr= str2.split(" ");
-                /*if( i=value.""){delete arr[i];}*/
-                
-        console.log(arr);
+            let arr= str.split(" ");
+            arr = arr.filter(val => val !== "");
+            console.log(arr);
 
         if (arr) {
             lastname.value=arr[0].substring(0,1).toUpperCase() + arr[0].substring(1).toLowerCase();    
